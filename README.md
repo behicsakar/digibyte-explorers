@@ -1,4 +1,3 @@
-<img src="http://bitcore.io/css/images/module-explorer.png" alt="bitcore explorers" height="35">
 # Blockchain APIs for bitcore
 
 [![NPM Package](https://img.shields.io/npm/v/bitcore-explorers.svg?style=flat-square)](https://www.npmjs.org/package/bitcore-explorers)
@@ -12,14 +11,14 @@ A module for [bitcore](https://github.com/bitpay/bitcore) that implements HTTP r
 Be careful! When using this module, the information retrieved from remote servers may be compromised and not reflect the actual state of the blockchain.
 
 ```sh
-npm install bitcore-explorers
-bower install bitcore-explorers
+npm install digibyte-explorers
+bower install digibyte-explorers
 ```
 
 At the moment, only Insight is supported, and only getting the UTXOs for an address and broadcasting a transaction.
 
 ```javascript
-var explorers = require('bitcore-explorers');
+var explorers = require('digibyte-explorers');
 var insight = new explorers.Insight();
 
 insight.getUtxos('1Bitcoin...', function(err, utxos) {
